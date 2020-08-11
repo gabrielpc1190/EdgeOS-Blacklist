@@ -24,15 +24,15 @@
 
 
 # This script will run when the Edgerouter boots. It will:
-# Traverse the list of countries defined in the top of the script
-# Download a list of subnets in each country
-# Add it to the ipset table (thats what the Edgerouter uses for network-groups)
+Traverse the list of countries defined in the top of the script
+Download a list of subnets in each country
+Add it to the ipset table (thats what the Edgerouter uses for network-groups)
 
 # Testing
-# After rebooting the edgerouter or manually running the script, you can check that we #actually got some subnets in our network-group:
+After rebooting the edgerouter or manually running the script, you can check that we #actually got some subnets in our network-group:
 
-show firewall group network-group countries_allowed
++ show firewall group network-group countries_allowed
 
-# Dont be fooled by looking in the GUI – it will know nothing about all this happening behind #the scenes!
-# Be careful!
-# If you do any change to the network group “countries_allowed” from the GUI, the Edgerouter #will empty the list generated from the script! Don’t do that 🙂
+Dont be fooled by looking in the GUI – it will know nothing about all this happening behind #the scenes!
+Be careful!
+If you do any change to the network group “countries_allowed” from the GUI, the Edgerouter #will empty the list generated from the script! Don’t do that 🙂
