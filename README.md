@@ -37,6 +37,11 @@ set firewall name WAN_IN rule 40 destination port 8123
 set firewall name WAN_IN rule 40 protocol tcp
 set firewall name WAN_IN rule 40 source group network-group countries_allowed
 
+set firewall name WAN_LOCAL rule 5 action accept
+set firewall name WAN_LOCAL rule 5 description 'ICMP from countries_allowed'
+set firewall name WAN_LOCAL rule 5 protocol icmp
+set firewall name WAN_LOCAL rule 5 source group network-group countries_allowed
+
 set system task-scheduler task country_load interval 1d
 set system task-scheduler task country_load executable path /config/scripts/post-config.d/country-load.sh
 
