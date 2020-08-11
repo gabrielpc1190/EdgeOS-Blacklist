@@ -26,6 +26,7 @@ WHITELIST=(
     "172.16.0.0/12"
     "192.168.0.0/16"
     "fc00::/7"
+    "http://www.iwik.org/ipcountry/CR.cidr"
     #Examples
     #"http://some.site.containing/a_whitelist.txt"
 )
