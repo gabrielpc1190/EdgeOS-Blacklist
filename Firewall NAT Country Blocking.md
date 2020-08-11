@@ -21,6 +21,7 @@
 + commit; save
 
 # Create the script file “/config/scripts/post-config.d/country-load.sh” (chmod 755) (or download from here)
+https://raw.githubusercontent.com/gabrielpc1190/EdgeOS-Blacklist/master/country_load.sh
 
 
 # This script will run when the Edgerouter boots. It will:
