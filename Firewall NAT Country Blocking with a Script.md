@@ -1,4 +1,4 @@
-#Firewall rules to run before script is created
+# Firewall rules to run before script is created
 
 set firewall group network-group countries_allowed description 'Allowed countries'
 set firewall group network-group countries_allowed network 10.0.0.0/8
