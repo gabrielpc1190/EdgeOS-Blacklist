@@ -1,7 +1,7 @@
 # This is a way of adding a country-block to an EdgeOS Device. It works by pulling a CIDR table from http://www.iwik.org based on the list of countries you can set
 
 + Download the country-load.sh to your EdgeOS
-curl -o /config/scripts/post-config.d/country-load.sh https://raw.githubusercontent.com/gabrielpc1190/EdgeOS-CountryBlock/master/country-load.sh
+curl -o /config/scripts/post-config.d/country-load.sh https://raw.githubusercontent.com/gabrielpc1190/EdgeOS-CountryBlock/master/country_load.sh
 
 + Set the country two digits code ALL-IN-CAPS at the beggining of the country-load.sh script:
 vi /config/scripts/post-config.d/country-load.sh
