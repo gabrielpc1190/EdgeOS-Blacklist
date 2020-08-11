@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 60
 #Set the country two digits code ALL-IN-CAPS
 countryList="CR"
 firewallGroupName=countries_allowed
