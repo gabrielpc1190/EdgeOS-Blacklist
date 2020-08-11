@@ -2,12 +2,12 @@
 
 Download the country-load.sh to your EdgeOS
 ```
-curl -o /config/scripts/post-config.d/country-load.sh https://raw.githubusercontent.com/gabrielpc1190/EdgeOS-CountryBlock/master/country_load.sh
+sudo curl -o /config/scripts/post-config.d/country-load.sh https://raw.githubusercontent.com/gabrielpc1190/EdgeOS-CountryBlock/master/country_load.sh
 ```
 
 Set the country two digits code ALL-IN-CAPS at the beggining of the country-load.sh script:
 ```
-vi /config/scripts/post-config.d/country-load.sh
+sudo vi /config/scripts/post-config.d/country-load.sh
 ```
 Find the line and add or remove countries you want to allow:
 ```
