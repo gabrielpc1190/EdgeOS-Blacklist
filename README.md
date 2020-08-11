@@ -48,3 +48,7 @@ After rebooting the edgerouter or manually running the script, you can check tha
 Dont be fooled by looking in the GUI – it will know nothing about all this happening behind #the scenes!
 Be careful!
 If you do any change to the network group “countries_allowed” from the GUI, the Edgerouter #will empty the list generated from the script! Don’t do that 🙂
+
+
+The original idea was found on this website. Thanks for the ideas!
+http://www.cron.dk/firewalling-by-country-on-edgerouter/
