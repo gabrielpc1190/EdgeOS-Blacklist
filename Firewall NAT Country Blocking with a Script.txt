@@ -4,9 +4,9 @@ set firewall group network-group countries_allowed description 'Allowed countrie
 set firewall group network-group countries_allowed network 10.0.0.0/8
 
 set port-forward rule 4 description 'Home Assistant'
-set port-forward rule 4 forward-to address 172.16.10.12
+set port-forward rule 4 forward-to address 192.168.1.10
 set port-forward rule 4 forward-to port 8123
-set port-forward rule 4 original-port 48123
+set port-forward rule 4 original-port 8123
 set port-forward rule 4 protocol tcp
 
 set firewall name WAN_IN rule 40 action accept
@@ -24,7 +24,7 @@ commit; save
 
 #!/bin/bash
 #Set the country two digits code ALL-IN-CAPS
-countryList="CR"
+countryList="US"
 firewallGroupName=countries_allowed
 
 #mkdir /config/user-data
