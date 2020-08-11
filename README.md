@@ -54,7 +54,7 @@ Add it to the ipset table (thats what the Edgerouter uses for network-groups)
 ```
 
 # Testing
-After rebooting the edgerouter or manually running the script, you can check that we #actually got some subnets in our network-group:
+After rebooting the edgerouter or manually running the script, you can check that we actually got some subnets in our network-group:
 ```
 sudo ipset -L countries_allowed
 ```
