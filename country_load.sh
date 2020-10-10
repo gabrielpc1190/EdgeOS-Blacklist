@@ -11,6 +11,7 @@ function loadcountry () {
 
         logger -s "Downloading country definition for $country..."
         sudo curl -o /config/user-data/${country}.cidr http://www.iwik.org/ipcountry/${country}.cidr
+        tail -n +2 "/config/user-data/${country}.cidr" > "/config/user-data/${country}.cidr.tmp" && mv "/config
         logger -s "Adding rules to firewall group $firewallGroupName..."
         for rule in `cat /config/user-data/${country}.cidr`; do
             sudo ipset add $firewallGroupName $rule
