@@ -2,7 +2,7 @@
 
 Download the country-load.sh to your EdgeOS
 ```
-sudo curl -o /config/scripts/post-config.d/country-load.sh https://raw.githubusercontent.com/gabrielpc1190/EdgeOS-CountryBlock/master/country_load.sh
+sudo curl -k -o /config/scripts/post-config.d/country-load.sh https://raw.githubusercontent.com/gabrielpc1190/EdgeOS-CountryBlock/master/country_load.sh
 ```
 
 Set the country two digits code ALL-IN-CAPS at the beggining of the country-load.sh script:
